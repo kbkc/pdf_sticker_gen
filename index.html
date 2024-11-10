@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<head>
+     <title>PDF Text Replacement</title>
+	 <!-- <script src="pdf-lib.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/pdf-lib@latest/dist/pdf-lib.js"></script>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="p-3 mb-2 bg-secondary text-white jumbotron text-center" >
+  <h1>ReformA stick</h1>
+  <p>( Fill data and press button )</p>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="row">
+
+    <div class="col-sm-4">
+    <form id="pdfForm">
+        <label for="textbox4">Art </label>
+        <input type="text" id="textbox4" name="textbox4" value="941567"><br><br>
+ 
+        <label for="textbox1">Line1</label>
+        <input type="text" id="textbox1" name="textbox1" value="GEL"><br><br>
+
+        <label for="textbox2">Line2</label>
+        <input type="text" id="textbox2" name="textbox2" value="POLISH"><br><br>
+
+        <label for="textbox3">Product_name</label>
+        <input type="text" id="textbox3" name="textbox3" value="Insigna"><br><br>
+		
+
+        <button type="button" id="generatePdf">Generate PDF</button>
+	<script src="generate-pdf.js"></script>
+    </form>
+    
+
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
